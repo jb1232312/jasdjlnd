@@ -3,7 +3,7 @@ const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
-const TARGET_URL = 'https://9000-firebase-studio-1753507758504.cluster-htdgsbmflbdmov5xrjithceibm.cloudworkstations.dev';
+const TARGET_URL = 'https://9000-firebase-studio-1753507758504.cluster-htdgsbmflbdmov5xrjithceibm.cloudworkstations.dev/?monospaceUid=331419';
 
 app.use('/', createProxyMiddleware({
   target: TARGET_URL,
